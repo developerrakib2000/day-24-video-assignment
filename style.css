@@ -1,0 +1,159 @@
+body, p, span{
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+h1 h2 h3 h4 h5 h6 a {
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-header .container,
+.slider-section .container-fluid{
+max-width: 1400px;
+}
+
+
+/* start */
+
+/* btn */
+body .btn-primary {
+    background: #e83b3e !important;
+    border: black;
+    padding: 10px 25px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+body .btn-primary::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #111;
+    border: #111;
+    z-index: -1;
+   transition: .5s;
+}
+
+body .btn-primary:hover::after{
+    width: 100%;
+   
+}
+
+/* menu */
+
+ul.main-menu li a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+ul.main-menu li a:hover{
+    color:#e83b3e ;
+}
+/* dropdown-menu */
+ul.main-menu li{
+position: relative;
+}
+
+ul.main-menu li ul{
+position: absolute;
+left: 0;
+top: 140%;
+width: 220px;
+background: white;
+list-style: none;
+margin-top: 7px;
+opacity: 0;
+visibility: hidden;
+transition: all .5s ease-in-out;
+box-shadow: 0px, 0px, 15px 0px rgba(66, 23, 23, 0.4);
+}
+
+ul.main-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+
+
+.header-info{}
+.header-search{}
+.header-call{
+    width: 200px;
+
+}
+.header-btn{}
+
+/* slider */
+
+.slider-section{
+    background: url(./main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.slider-items{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+.slider-social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-content h5{
+    color: #e73c4a;
+}
+.slider-content h2 {
+    margin-top: 30px;
+    font-size: 65px;
+    font-weight: 600;
+}
+.slider-content p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* icon */
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li {
+    
+}
+
+.slider-social ul span {
+    font-weight: 300;
+    font-size: 17px;
+    position: relative;
+    margin-right: 60px;
+}
+.slider-social ul span::after{
+content: "";
+position: absolute;
+left: 80px;
+top: 12px;
+height: 1px;
+width: 40px;
+background: #111;
+}
+
+.slider-social ul a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    color: black;
+}
